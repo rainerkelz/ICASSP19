@@ -1,0 +1,6 @@
+torch>=1.0.0
+joblib>=0.13.0
+tensorboardX==1.4
+scikit-learn>=0.19.1
+matplotlib>=3.0.0
+mir_eval>=0.5
