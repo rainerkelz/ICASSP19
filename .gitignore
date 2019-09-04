@@ -4,3 +4,4 @@ exported
 joblib_cache
 __pycache__
 *.pyc
+*.pkl
