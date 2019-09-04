@@ -80,6 +80,6 @@ $ python gridsearch.py exported/ofos/lr_0.15_bs_256/test exported/ofos/lr_0.15_b
 ## Export your newly trained model to madmom
 - in case you want your pytorch model converted to madmom, so it can be deployed with less dependencies, you can use the `convert.py` script
 ```
-$ convert.py python export.py runs/ofos/lr_0.15_bs_256/best_valid_loss.pkl notes_cnn.pkl
+$ python convert.py runs/ofos/lr_0.15_bs_256/best_valid_loss.pkl notes_cnn.pkl
 ```
 - if you give the converter script an audiofilename, it runs the whole pre-processing chain (which needs to be adapted to what was in the config used for training) for the audiofile, and then applies the converted model, and finally displays the output feature maps
