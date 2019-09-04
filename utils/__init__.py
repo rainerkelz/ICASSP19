@@ -38,7 +38,8 @@ def canonicalize_audio_options(_audio_options, mmspec):
         'norm',
         'norm_filters',
         'unique_filters',
-        'circular_shift'
+        'circular_shift',
+        'add'
     ])
 
     spectype = getattr(mmspec, audio_options['spectrogram_type'])

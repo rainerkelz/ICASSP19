@@ -94,7 +94,7 @@ def get_config():
                     norm_filters=True,
                     unique_filters=True,
                     circular_shift=False,
-                    add=1e-6
+                    add=1
                 )
             )
             yield config
