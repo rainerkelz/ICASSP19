@@ -52,6 +52,8 @@ $ python create-maps-metadata-file-non-overlapping.py data/maps_piano/data
 ```
 $ python run.py configs/ofos.py --train --cuda
 ```
+- the learnrate is maybe set a tiny little bit too high, and you may need to restart the script a few times until it actually learns properly (thanks to Adrien Ycart for reminding me!)
+- as an alternative, you could use a learnrate scheduler that starts with a lower learnrate and speeds up after a few batches / epochs (we have **not** tested this!)
 
 ## Gridsearch, Finetuning
 - some editing required here ...
