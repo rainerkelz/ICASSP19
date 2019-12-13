@@ -13,7 +13,7 @@ $ source bin/activate
 $ git clone https://github.com/rainerkelz/ICASSP19
 ```
 
-- until a new madmom version is released on pip, you'll have to build madmom from source:
+- until a new [madmom](https://github.com/CPJKU/madmom) version is released on pip, you'll have to build [madmom](https://github.com/CPJKU/madmom) from source:
 
 ```
 $ pip install -r ICASSP19/requirements_00.txt
@@ -24,7 +24,7 @@ $ python setup.py develop
 $ cd ..
 ```
 
-- you should have madmom version 0.17.dev0 or higher now
+- you should have [madmom](https://github.com/CPJKU/madmom) version 0.17.dev0 or higher now
 - now we'll install the second set of requirements
 
 ```
@@ -80,8 +80,10 @@ $ python gridsearch.py exported/ofos/lr_0.15_bs_256/test exported/ofos/lr_0.15_b
 ```
 
 ## Export your newly trained model to madmom
-- in case you want your pytorch model converted to madmom, so it can be deployed with less dependencies, you can use the `convert.py` script
+- in case you want your pytorch model converted to [madmom](https://github.com/CPJKU/madmom), so it can be deployed with less dependencies, you can use the `convert.py` script
 ```
 $ python convert.py runs/ofos/lr_0.15_bs_256/best_valid_loss.pkl notes_cnn.pkl
 ```
 - if you give the converter script an audiofilename, it runs the whole pre-processing chain (which needs to be adapted to what was in the config used for training) for the audiofile, and then applies the converted model, and finally displays the output feature maps
+
+- by now, there should be a trained model available in [madmom](https://github.com/CPJKU/madmom) that achieves around ~57.XX f-measure on the MAPS test set as described in the paper
